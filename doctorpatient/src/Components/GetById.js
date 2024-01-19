@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import GetAll from './GetAll';
 
 export default function GetById() {
   const { id } = useParams();
@@ -68,6 +69,8 @@ export default function GetById() {
         {/* Submit Button */}
         <button type="submit">Submit</button>
       </form>
+
+      <GetAll/>
     </>
   );
 }
