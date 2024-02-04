@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 export default function ApiCancel() {
   const [count, setCount] = useState(0);
@@ -9,11 +9,13 @@ export default function ApiCancel() {
 
     let fetchData = async () => {
       try {
-        let getData = await fetch('https://localhost:7043/api/Doctor', { signal });
+        let getData = await fetch("https://localhost:7043/api/Doctor", {
+          signal,
+        });
         let response = await getData.json();
         console.log(response);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
