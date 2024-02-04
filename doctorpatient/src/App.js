@@ -26,8 +26,12 @@ const [count, setcount] = useState(0);
     console.log("this is app.js will render based on my count update");
     
   }, [count])
-  
 
+  const updatecount=()=>{
+    setcount(count+1)
+    setcount(count+1)
+    setcount(count+1)
+  }
 
 
   return (
@@ -36,7 +40,10 @@ const [count, setcount] = useState(0);
       <UseEffectNavbar/>
       <div className="text-center">
       <button onClick={()=>{
-        setcount(count+1);
+        setcount(count=>count+1);
+        setcount(count=>count+1);
+        setcount(count=>count+1);
+        
       }} >clickc me </button>
        <h1>{count}</h1>
       </div>
