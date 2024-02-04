@@ -30,7 +30,7 @@ export default function GetById() {
 
   return (
     <>
-      <h1>hii i am doctor get by {id}</h1>
+      <h1 className="text-blue-500">hii i am doctor get by {id}</h1>
 
       <h1>My Form</h1>
       <form onSubmit={handlesubmit}>
